@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Emily Hicks Portfolio Projects</title>
+</head>
+<body>
+    <header>
+<!-- Navigation -->
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+<!-- Hanging Plants Image -->
+    <div id="hanging-plants">
+        <img src="2 copy.png" alt="drawing of plants hanging in planters" style="max-width: 400px; max-height: 300px;">
+    </div>
+<h1 style="text-align: center;">Projects</h1>
+<br>
+    <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #f1f1f1;
+          color: black;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2 style="text-align:center">Nevada Health Link</h2>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="porject1_img1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="project1-img2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="project1-img3.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="project1-img4.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="project1-img5.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="project1-img6.png" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br><br><br>
+        <h2 style="text-align:center">Radar Bar and Grill</h2>
+        <div class="slideshow-container">
+          <div class="mySlides2">
+            <img src="1.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="2 copy 2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="3 copy 2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="4.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="5.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="6.png" style="width:100%">
+          </div>
+
+          <div class="mySlides2">
+            <img src="6.png" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        
+        <br><br><br>
+        <h2 style="text-align:center">Estilo Clothes</h2>
+        <div class="slideshow-container">
+          <div class="mySlides3">
+            <img src="1 copy.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides3">
+            <img src="2.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides3">
+            <img src="3.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        
+        <script>
+            let slideIndex = [1, 1, 1];
+            let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+            showSlides(1, 0);
+            showSlides(1, 1);
+            showSlides(1, 2);
+        
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+        
+            function showSlides(n, no) {
+                let i;
+                let x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+            }
+        </script>
+        
+
+<!-- Plant Photo -->
+<div id="flowers">
+    <img src="3 copy.png" alt="drawing of flowers">
+</div>
+<!-- Footer -->
+<footer>
+    <p>© 2024 Emily Hicks. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://github.com/elhicks01"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emily-l-hicks/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</footer>
+</body>
+</html>
