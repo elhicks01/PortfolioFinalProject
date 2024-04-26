@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1d5c189;
+}
+
+header {
+    background-color: #3A5A3C;
+    color: #fff;
+    padding: 20px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: larger;
+}
+
+#nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hanging-plants {
+    text-align: center;
+}
+
+#name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#my-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#intro {
+    padding: 20px;
+    text-align: center;
+    padding: 40px;
+    font-size: larger;
+}
+
+#resume {
+    text-align: center;
+    padding: 20px;
+}
+
+#resume a {
+    color: rgb(241, 82, 109);
+    font-size: larger;
+}
+
+#flowers {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #3A5A3C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#education {
+    padding: 20px;
+    text-align: center;
+    padding: 40px;
+    font-size: larger;
+}
+
+* {box-sizing: border-box}
+#project-1, #project-2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.social-links .fa {
+    padding: 40px;
+    font-size: 80px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjustments for small devices */
+    #my-image img {
+        width: 100%;
+        height: auto;
+        position: static;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for extra small devices */
+    #nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Adjustments for large devices */
+    #intro {
+        padding: 60px;
+    }
+}
+
